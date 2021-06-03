@@ -12,10 +12,25 @@ const Menu = (props) => {
         <div>
             <h1>What vacation spot are you looking for?</h1>
             <form onClick={handleClick}>
-                <input type="radio" name="img" value="first"/>Warm Beach Paradise
-                <input type="radio" name="img" value="second"/>Adventurous Mountain Hiking
-                <input type="radio" name="img" value="third"/>Serene Cabin Getaway
-                <input type="radio" name="img" value="fourth"/>Relaxing Spa Day
+                <div className="radio-div">
+                    <input type="radio" name="img" value="first"/>
+                    <label>Warm Beach Paradise</label>
+                </div>
+            
+                <div className="radio-div">
+                    <input type="radio" name="img" value="second"/>
+                    <label>Adventurous Mountain Hiking</label>
+                </div>
+
+                <div className="radio-div">
+                    <input type="radio" name="img" value="third"/>
+                    <label>Serene Cabin Getaway</label>
+                </div>
+                
+                <div className="radio-div">
+                    <input type="radio" name="img" value="fourth"/>
+                    <label>Relaxing Spa Day</label>
+                </div>
             </form>
         </div>
     )

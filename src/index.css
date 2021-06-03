@@ -39,5 +39,15 @@ img {
   padding: 2em 4em;
 }
 
-form {
+
+.radio-div {
+  background-color:salmon;
+  margin-bottom: 1em;
+  width: 300px;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+input {
+  cursor: pointer;
 }
