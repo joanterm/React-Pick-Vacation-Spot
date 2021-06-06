@@ -6,8 +6,8 @@ const Modal = (props) => {
     return(
         <div className="overlay">
             <div className="modal">
-                <button onClick={props.close}>Close</button>
-                <h1>MODAL</h1>
+                <h2>Thank you for booking your amazing vacation!</h2>
+                <button className="close-modal-btn" onClick={props.close}>Close</button>
                 {props.children}
             </div>
         </div>

@@ -10,7 +10,7 @@ const Menu = (props) => {
 
     return(
         <div>
-            <h1>What vacation spot are you looking for?</h1>
+            <h1>What vacation spot are you looking for today?</h1>
             <form onClick={handleClick}>
                 <div className="radio-div">
                     <input type="radio" name="img" value="first"/>

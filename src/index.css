@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+
+
 body {
   margin: 0;
   padding: 0;
@@ -6,10 +9,18 @@ body {
   justify-content: center;
   width: 100%;
   height: 100vh;
+  font-family: 'El Messiri', sans-serif;
+  background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+}
+
+@media only screen and (min-width: 720px)  {
+  h1 {
+    font-size: 36px;
+  }
 }
 
 .overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -18,10 +29,14 @@ body {
 }
 
 .modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  background-color: aqua;
+  background-color: #ffe29f;
+  position: relative;
+  padding: 20px;
+  height: 200px;
+  margin: 0 auto;
+  max-width: 300px;
+  top: 30%;
+
 }
 
 img {
@@ -30,24 +45,34 @@ img {
 }
 
 .main-section {
-  border: 3px solid red;
+  background-color: rgb(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.3); 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 2em 4em; 
   text-align: center;
-  padding: 2em 4em;
+  
 }
 
-
 .radio-div {
-  background-color:salmon;
   margin-bottom: 1em;
-  width: 300px;
+  width: 80%;
   text-align: left;
-  padding: 5px 10px;
+  padding: 0.5em 1em;
 }
 
 input {
   cursor: pointer;
+}
+
+.open-modal-btn {
+  margin-top: 1em;
+  border: none;
+  padding: 1em 2em;
+  background-color: #ffe29f;
+  font-weight: 700;
+  text-transform: uppercase;
 }

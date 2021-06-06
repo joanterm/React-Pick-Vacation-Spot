@@ -38,7 +38,7 @@ const App = () => {
       <Image location={image} />
 
       <div>
-        <button onClick={openModal}>Open</button>
+        <button className="open-modal-btn" onClick={openModal}>Book</button>
         <Modal open={isOpen} close={closeModal} />
       </div>
 
