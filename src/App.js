@@ -24,7 +24,7 @@ const App = () => {
   }
 
   // MODAL PART
-  const openModal = () => {
+  const openModal = (e) => {
     setIsOpen(true)
   }
 
@@ -39,7 +39,7 @@ const App = () => {
 
       <div>
         <button className="open-modal-btn" onClick={openModal}>Book</button>
-        <Modal open={isOpen} close={closeModal} />
+        <Modal open={isOpen} close={closeModal}/>
       </div>
 
     </div>
