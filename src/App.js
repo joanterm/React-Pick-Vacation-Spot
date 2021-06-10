@@ -16,6 +16,7 @@ const App = () => {
 
   const [image, setImage] = useState(images.first)
   const [isOpen, setIsOpen] = useState(false)
+  const [displayValue, setDisplayValue] = useState("PLACE NAME HERE")
 
   // IMAGE PART
   const chooseImage = (newImgValue) => {
@@ -24,12 +25,16 @@ const App = () => {
   }
 
   // MODAL PART
-  const openModal = (e) => {
-    setIsOpen(true)
+  const openModal = () => {
+    setIsOpen(true);
   }
 
   const closeModal = () => {
     setIsOpen(false)
+  }
+
+  const display = () => {
+    setDisplayValue()
   }
 
   return (
@@ -37,10 +42,9 @@ const App = () => {
       <Menu newImage={chooseImage}/>
       <Image location={image} />
 
-      <div>
-        <button className="open-modal-btn" onClick={openModal}>Book</button>
-        <Modal open={isOpen} close={closeModal}/>
-      </div>
+      <button className="open-modal-btn" onClick={openModal}>Book</button>
+      <Modal open={isOpen} onChange={display} displayValue={displayValue} close={closeModal}/>
+    
 
     </div>
   );
