@@ -8,7 +8,7 @@ const Modal = (props) => {
     return(
         <div className="overlay">
             <div className="modal">
-                <h2>Thank you for booking your amazing vacation at {props.displayValue}! Your request is being processed.</h2>
+                <h2>Thank you for booking your amazing vacation at<div className="location">{props.displayValue}!</div> Your request is being processed.</h2>
                 <button className="close-modal-btn" onClick={props.close}>Close</button>
                 {props.children}       
             </div>

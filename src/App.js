@@ -11,6 +11,13 @@ const images = {
   fourth: "https://images.unsplash.com/photo-1613013546273-fdedae34436c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
 }
 
+const descriptions = {
+  first: "Warm Beach Paradise",
+  second: "Adventurous Mountain Hiking",
+  third: "Serene Cabin Getaway",
+  fourth: "Relaxing Spa Day",
+};
+
 
 const App = () => {
 
@@ -21,7 +28,11 @@ const App = () => {
   // IMAGE PART
   const chooseImage = (newImgValue) => {
     const setNewImg = images[newImgValue]
+    const setNewDisplayValue = descriptions[newImgValue]
+
+
     setImage(setNewImg)
+    setDisplayValue(setNewDisplayValue)
   }
 
   // MODAL PART
